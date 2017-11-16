@@ -1,0 +1,17 @@
+<h1 class="text-center">{{title}}</h1>
+<div class="row">
+    <div class="container text-center">
+        <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+        <button class="btn btn-lg btn-info" [class.active]="filterBy=='boats'" (click)="filterBy='boats'">Boats</button>
+        <button class="btn btn-lg btn-info" [class.active]="filterBy=='New York'" (click)="filterBy='New York'">New York</button>
+        <button class="btn btn-lg btn-info" [class.active]="filterBy=='Fun'" (click)="filterBy='Fun'">Fun</button>
+        <button class="btn btn-lg btn-info" [class.active]="filterBy=='Tour'" (click)="filterBy='Tour'">Tour</button>
+    </div>
+    <ul class="img-thumbnail">
+        <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
+            <a [routerLink]="['/image', image.id]">
+                <img src="{{image.url}}" class="tn" width="200" height="160"/>
+            </a>
+        </li>
+    </ul>
+</div>

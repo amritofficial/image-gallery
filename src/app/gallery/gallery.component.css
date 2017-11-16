@@ -1,0 +1,34 @@
+.tn{
+    margin: 6px;
+    border: 4px solid #eeeeee;
+    box-shadow: #555 1px 1px 8px 1px;
+}
+
+ul{
+    padding: 0;
+    width: 1200px; 
+    margin: 20px auto;    
+}
+
+li {
+    display: inline;
+}
+
+.liCenter {
+    text-align: center;
+}
+
+.img-thumbnail {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: -10px;
+    padding-right: -10px;
+    text-align: center;
+    border: 0 none;
+    box-shadow: none;
+}
+
+
+/* .container{
+    margin-left: 40px;
+} */
